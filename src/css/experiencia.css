@@ -1,0 +1,30 @@
+.experiencia .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.experiencia .container .box1 h2 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: center;
+    width: 330px;
+    margin-top: 100px;
+    color: #dcdcdc;
+    box-shadow: 0px, 2px, 60px black;
+}
+
+.experiencia .container .box2 .b2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+
+.experiencia .container .box2 .b2 .b3 {
+    height: 200px;
+    background-color: aquamarine;
+}
