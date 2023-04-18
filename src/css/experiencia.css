@@ -1,9 +1,12 @@
 .experiencia .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    padding: 30px 0;
+    margin-top: 50px;
 }
 
 .experiencia .container .box1 h2 {
@@ -13,17 +16,109 @@
     text-align: center;
     width: 330px;
     margin-top: 100px;
-    color: #dcdcdc;
+    color: #d3d3d3;
 }
 
 .experiencia .container .box2 .b2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.experiencia .container .box2 p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+    margin: 0 auto;
+    position: relative;
+    color: #4f4f4f;
+    margin-bottom: 70px;
+}
+
+.experiencia .container .box2 p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 16px;
+    background-color: #0000cd;
+    top: 2;
+    left: -15;
+}
+
+.experiencia .container .box2 p span {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.experiencia .container .box2 .b2 .b3-img h3 {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #cccccc;
+    padding: 5px 0;
 }
 
 .experiencia .container .box2 .b2 .b3 {
-    height: 200px;
-    background-color: aquamarine;
+    display: flex;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex1 {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experiencia .container .box2 .b2 .b3 a {
+    color: #d3d3d3;
+    font-weight: 700;
+    font-size: 0.937rem;
+    padding: 10px 10px;
+    display: inline-block;
+    background-color: brown;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.experiencia .container .box2 .b2 .b3 a:hover {
+    background-color: rgb(112, 26, 26);
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 {
+    width: 100%;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 19px;
+    background-color: #0000cd;
+    bottom: 5;
+    left: -18;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 .box-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 img {
+    width: 50px;
+    margin-top: 30px;
 }
