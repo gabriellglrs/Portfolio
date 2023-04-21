@@ -1,0 +1,183 @@
+.formacao {
+    width: 100%;
+    background-color: #141414;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.formacao .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+}
+
+.formacao .container .box1 h2 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: center;
+    margin-top: 140px;
+    color: black;
+}
+
+.formacao .container .box2 h2 {
+    color: #808080;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    font-size: 1.9rem;
+}
+
+.formacao .container .box2 h2 span {
+    color: white;
+    font-weight: bold;
+}
+
+.formacao .container .box2 p {
+    color: #808080;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.formacao .container .box2 .flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.formacao .container .box2 .flex .b0 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.formacao .container .box2 .flex .b0 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: #0000cd;
+    left: -25px;
+}
+
+.formacao .container .box2 .flex .b1 h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.formacao .container .box2 .flex .b1 h3 {
+    font-size: 20px;
+    position: relative;
+    display: inline;
+}
+
+.formacao .container .box2 .flex .b1 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 50px;
+    display: block;
+}
+
+.formacao .container .box2 .flex .b2 h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.formacao .container .box2 .flex .b2 h3 {
+    font-size: 20px;
+    position: relative;
+    display: inline;
+}
+
+.formacao .container .box2 .flex .b2 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 74px;
+    display: block;
+}
+
+.formacao .container .box2 .info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formacao .container .box2 .info h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formacao .container .box2 .info h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/formacao/backpack.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    left: -36px;
+    top: -7;
+}
+
+.formacao .container .box2 .info ul li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formacao .container .box2 .info ul li span {
+    color: #808080;
+}
+
+.formacao .container .box2 .lang {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formacao .container .box2 .lang h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formacao .container .box2 .lang h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/formacao/translate.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    left: -36px;
+    top: -7;
+}
+
+.formacao .container .box2 .lang ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
