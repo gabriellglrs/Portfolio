@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid #0000cd;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .container h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #141414;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.footer .container .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer .container .grid .box-1 h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #808080;
+    position: relative;
+    display: inline-block;
+}
+
+.footer .container .grid .box-1 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #0000cd;
+    width: 10px;
+    height: 29px;
+    top: 4;
+    left: -10;
+}
+
+.footer .container .grid .box-2 .nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 0;
+}
+
+.footer .container .grid .box-2 .nav li a img {
+    margin-top: 10px;
+    padding: 20px;
+    border-bottom: #000000 solid 3px;
+}
+
+.footer .container .grid .box-2 .nav li a img:hover {
+    border-bottom: #0000cd solid 3px;
+    background-color: #141414;
+    border-radius: 5px;
+}
+
+.footer .container img {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
