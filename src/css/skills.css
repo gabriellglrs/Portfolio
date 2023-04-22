@@ -12,7 +12,8 @@
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #dcdcdc;
     color: #d3d3d3;
 }
 

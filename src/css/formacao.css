@@ -3,7 +3,6 @@
     background-color: #141414;
     color: white;
     margin-top: 50px;
-    padding-bottom: 50px;
 }
 
 .formacao .container {
@@ -114,7 +113,7 @@
 }
 
 .formacao .container .box2 .info {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -122,7 +121,7 @@
     font-size: 18px;
     text-transform: uppercase;
     color: #808080;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -131,12 +130,12 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../img/formacao/backpack.svg);
+    background-image: url(../img/formacao/chrome_reader_mode_FILL0_wght600_GRAD0_opsz48\ 1.svg);
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
-    left: -36px;
-    top: -7;
+    left: -45px;
+    top: -8;
 }
 
 .formacao .container .box2 .info ul li {
@@ -152,7 +151,7 @@
 }
 
 .formacao .container .box2 .lang {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -169,12 +168,12 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../img/formacao/translate.svg);
+    background-image: url(../img/formacao/translate_FILL0_wght600_GRAD0_opsz48\ 1.svg);
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
-    left: -36px;
-    top: -7;
+    left: -45px;
+    top: -8;
 }
 
 .formacao .container .box2 .lang ul li {
