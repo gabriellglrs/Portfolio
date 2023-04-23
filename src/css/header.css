@@ -29,9 +29,13 @@
 
 .header .header-menu a:hover {
     color: #0000cd;
+    border-bottom: 2px solid #0000cd;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
+
 .header .header-menu .li {
-    background-color: #e2e2e2;
     border-radius: 5px;
 }
 .header .header-menu a img {
@@ -42,6 +46,11 @@
     .header {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .header .header-menu a {
+        background-color: #e2e2e2;
+        border-radius: 5px;
     }
 }
 
