@@ -1,7 +1,1345 @@
-@import url(../css/global.css);
-@import url(../css/header.css);
-@import url(../css/introducao.css);
-@import url(../css/skills.css);
-@import url(../css/experiencia.css);
-@import url(../css/formacao.css);
-@import url(../css/footer.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    color: #141414;
+    background: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.header img {
+    width: 250px;
+}
+
+.header .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-menu a {
+    font-size: 1.125rem;
+    padding: 10px 20px;
+    display: block;
+    color: #141414;
+    cursor: pointer;
+}
+
+.header .header-menu a:hover {
+    color: #0000cd;
+    border-bottom: 2px solid #0000cd;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.header .header-menu .li {
+    border-radius: 5px;
+}
+.header .header-menu a img {
+    width: 30px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .header .header-menu a {
+        background-color: #e2e2e2;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 460px) {
+    .header {
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width: 368px) {
+    .header {
+        padding: 40px 20px;
+    }
+}
+
+.introducao {
+    max-width: 1200px;
+    padding: 40px 30px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.introducao img {
+    width: 250px;
+    margin: auto auto;
+    border-radius: 5px;
+}
+
+.introducao .box2 h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    text-transform: capitalize;
+    position: relative;
+    display: inline;
+}
+
+.introducao .box2 h1::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/introducao/simbolo\ 1.svg) no-repeat center;
+    background-size: 90px;
+    position: absolute;
+    left: -29px;
+    top: -13px;
+    z-index: -2;
+}
+
+.introducao .box2 p {
+    font-size: 1.125rem;
+    margin-top: 20px;
+    color: #4f4f4f;
+}
+
+@media (max-width: 900px) {
+    .introducao .box2 {
+        padding-left: 20px;
+    }
+
+    .introducao .box2 h1 {
+        font-size: 3.8rem;
+    }
+
+    .introducao .box2 h1::before {
+        background-size: 75px;
+        width: 75px;
+        height: 75px;
+        left: -18;
+        top: -3;
+    }
+}
+@media (max-width: 800px) {
+    .introducao .box2 h1 {
+        font-size: 3.5rem;
+    }
+
+    .introducao .box2 h1::before {
+        background-size: 60px;
+        width: 60px;
+        height: 60px;
+        left: -15;
+        top: -3;
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 730px) {
+    .introducao img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .introducao .box2 {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .introducao img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .introducao .box2 h1 {
+        font-size: 2.3rem;
+    }
+
+    .introducao .box2 h1::before {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        left: -14;
+        top: -4;
+    }
+
+    .introducao .box2 p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .introducao img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .introducao .box2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .introducao .box2 h1::before {
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+        left: -11;
+        top: -4;
+    }
+
+    .introducao .box2 p {
+        font-size: 0.8rem;
+    }
+}
+
+.skills {
+    max-width: 1200px;
+    margin: 30px auto;
+    border-top: 2px solid #dcdcdc;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.skills .h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #dcdcdc;
+    color: #d3d3d3;
+}
+
+.skills .flex {
+    padding: 30px 0px;
+    margin-bottom: 5px;
+}
+
+/********
+  box1
+*********/
+
+.skills .flex .box1 h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 15px;
+}
+
+.skills .flex .box1 .b1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.skills .flex .box1 .b1 img {
+    width: 60px;
+}
+
+/********
+  box2
+*********/
+
+.skills .flex .box2 .b2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.skills .flex .box2 h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.skills .flex .box2 .b2 img {
+    width: 60px;
+}
+
+/*******************
+---responsividade---
+********************/
+
+@media (max-width: 730px) {
+    .skills .h2 {
+        font-size: 4rem;
+    }
+
+    .skills .flex .box1 h2,
+    .skills .flex .box2 h2 {
+        font-size: 1.5rem;
+    }
+    .skills .flex .box1 .b1 img,
+    .skills .flex .box2 .b2 img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills .h2 {
+        font-size: 3.5rem;
+    }
+
+    .skills .flex .box1 h2,
+    .skills .flex .box2 h2 {
+        font-size: 1.3rem;
+    }
+    .skills .flex .box1 .b1 img,
+    .skills .flex .box2 .b2 img {
+        width: 40px;
+    }
+}
+
+.experiencia .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 5px;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.experiencia .container .box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia .container .box1 h2 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: center;
+    width: 330px;
+    margin-top: 100px;
+    color: #d6d6d6;
+}
+
+.experiencia .container .box1 img {
+    width: 400px;
+}
+
+.experiencia .container .box2 .b2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.experiencia .container .box2 p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+    margin: 0 auto;
+    position: relative;
+    color: #4f4f4f;
+    margin-bottom: 70px;
+}
+
+.experiencia .container .box2 p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 16px;
+    background-color: #0000cd;
+    top: 2;
+    left: -15;
+}
+
+.experiencia .container .box2 p span {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.experiencia .container .box2 .b2 .b3-img h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #d6d6d6;
+    padding: 5px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.experiencia .container .box2 .b2 .b3 {
+    display: flex;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex1 {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experiencia .container .box2 .b2 .b3 img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.experiencia .container .box2 .b2 .b3 a {
+    color: #d3d3d3;
+    font-weight: 700;
+    font-size: 0.937rem;
+    padding: 10px 10px;
+    display: inline-block;
+    background-color: brown;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.experiencia .container .box2 .b2 .b3 a:hover {
+    background-color: rgb(112, 26, 26);
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 {
+    width: 100%;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 19px;
+    background-color: #0000cd;
+    bottom: 5;
+    left: -18;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 .box-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.experiencia .container .box2 .b2 .b3 .flex2 img {
+    width: 65px;
+    margin-top: 30px;
+}
+
+/* 
+   responsividade
+*/
+
+@media (max-width: 1100px) {
+    .experiencia .container .box2 .b2 .b3 .flex2 .box-img img {
+        width: 80px;
+    }
+
+    .experiencia .container {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .experiencia .container .box2 .b2 .b3 img {
+        padding-left: 20px;
+    }
+
+    .experiencia .container .box2 .b2 .b3-img h3 {
+        margin-left: 20px;
+    }
+
+    .experiencia .container .box1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .experiencia .container .box1 h2 {
+        font-size: 8rem;
+        word-break: normal;
+        text-align: center;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .experiencia .container .box1 img {
+        width: 350px;
+    }
+
+    .experiencia .container .box1 img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .experiencia .container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .experiencia .container .box1 img {
+        width: 300px;
+    }
+
+    .experiencia .container .box1 h2 {
+        font-size: 6.5rem;
+        word-break: normal;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .experiencia .container .box2 .b2 .b3 .flex2 h3 {
+        font-size: 1.25rem;
+    }
+
+    .experiencia .container .box2 .b2 .b3 a {
+        padding: 10px 5px;
+        font-weight: 600;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .experiencia .container .box1 h2 {
+        font-size: 5.5rem;
+        margin-bottom: 20px;
+        word-break: normal;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .experiencia .container .box2 {
+        text-align: center;
+    }
+
+    .experiencia .container .box2 p::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 16px;
+        background-color: #0000cd;
+        top: 1;
+        left: 5;
+    }
+}
+
+@media (max-width: 650px) {
+    .experiencia .container .box2 .b2 .b3 img {
+        padding: 0 20px;
+    }
+
+    .experiencia .container .box2 .b2 .b3-img h3 {
+        margin: 0 20px;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 img {
+        width: 90px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .experiencia .container .box2 .b2 {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex1 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 {
+        text-align: center;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 h3::before {
+        width: 5px;
+        display: block;
+        height: 16px;
+        bottom: 4;
+        left: -10;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .experiencia .container .box2 .b2 .b3 a {
+        padding: 10px 5px;
+        width: 90px;
+    }
+
+    .experiencia .container .box2 p {
+        font-size: 0.937rem;
+        max-width: 50ch;
+        margin: 0 auto;
+        position: relative;
+        color: #4f4f4f;
+        margin-bottom: 20px;
+    }
+
+    .experiencia .container .box2 p::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 16px;
+        background-color: #0000cd;
+        top: 1;
+        left: 5;
+    }
+}
+
+@media (max-width: 580px) {
+    .experiencia .container .box1 h2 {
+        font-size: 4.6rem;
+        word-break: normal;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .experiencia .container .box2 p {
+        font-size: 0.937rem;
+        max-width: 50ch;
+        margin: 0 auto;
+        position: relative;
+        color: #4f4f4f;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .experiencia .container .box1 h2 {
+        font-size: 4.2rem;
+        word-break: normal;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .experiencia .container .box2 p {
+        font-size: 0.75rem;
+        max-width: 50ch;
+        margin: 0 auto;
+        position: relative;
+        color: #4f4f4f;
+        margin-bottom: 25px;
+    }
+
+    .experiencia .container .box2 p::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 12px;
+        background-color: #0000cd;
+        top: 0;
+        left: 4;
+    }
+
+    .experiencia .container .box2 .b2 .b3-img h3 {
+        font-size: 0.875rem;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 h3 {
+        font-size: 0.875rem;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 h3::before {
+        width: 5px;
+        display: block;
+        height: 12px;
+        bottom: 3;
+        left: -10;
+    }
+
+    .experiencia .container .box2 .b2 .b3 .flex2 img {
+        width: 80px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .experiencia .container .box1 h2 {
+        font-size: 3.5rem;
+        word-break: normal;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .experiencia .container .box2 p {
+        font-size: 0.625rem;
+        max-width: 50ch;
+        margin: 0 auto;
+        position: relative;
+        color: #4f4f4f;
+        margin-bottom: 20px;
+    }
+
+    .experiencia .container .box2 p::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 12px;
+        background-color: #0000cd;
+        top: -1;
+        left: 2;
+    }
+
+    .experiencia .container .box2 .b2 .b3 a {
+        padding: 7px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 350px) {
+    .experiencia .container .box1 h2 {
+        font-size: 3.2rem;
+        word-break: normal;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 315px) {
+    .experiencia .container .box1 h2 {
+        font-size: 3rem;
+        word-break: normal;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+.formacao {
+    width: 100%;
+    background-color: #141414;
+    color: white;
+    margin-top: 50px;
+}
+
+.formacao .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+}
+
+.formacao .container .box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao .container .box1 h2 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: center;
+    margin-top: 140px;
+    color: black;
+}
+
+.formacao .container .box2 h2 {
+    color: #808080;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    font-size: 1.9rem;
+}
+
+.formacao .container .box2 h2 span {
+    color: white;
+    font-weight: bold;
+}
+
+.formacao .container .box2 p {
+    color: #808080;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.formacao .container .box2 .flex {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.formacao .container .box2 .flex .b0 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #0000cd;
+}
+
+.formacao .container .box2 .flex .b0 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 25px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #0000cd;
+    left: -28px;
+}
+
+.formacao .container .box2 .flex .b1 h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.formacao .container .box2 .flex .b1 h3 {
+    font-size: 20px;
+    position: relative;
+    display: inline;
+}
+
+.formacao .container .box2 .flex .b1 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 50px;
+    display: block;
+}
+
+.formacao .container .box2 .flex .b2 h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.formacao .container .box2 .flex .b2 h3 {
+    font-size: 20px;
+    position: relative;
+    display: inline;
+}
+
+.formacao .container .box2 .flex .b2 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 74px;
+    display: block;
+}
+
+.formacao .container .box2 .info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formacao .container .box2 .info h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formacao .container .box2 .info h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/formacao/chrome_reader_mode_FILL0_wght600_GRAD0_opsz48\ 1.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    left: -45px;
+    top: -8;
+}
+
+.formacao .container .box2 .info ul li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formacao .container .box2 .info ul li span {
+    color: #808080;
+}
+
+.formacao .container .box2 .lang {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formacao .container .box2 .lang h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #808080;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formacao .container .box2 .lang h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/formacao/translate_FILL0_wght600_GRAD0_opsz48\ 1.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    left: -45px;
+    top: -8;
+}
+
+.formacao .container .box2 .lang ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1100px) {
+    .formacao .container {
+        grid-template-columns: 1fr;
+    }
+
+    .formacao .container .box1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .formacao .container .box1 h2 {
+        margin-top: 0;
+    }
+
+    .formacao .container .box1 img {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .formacao .container .box1 h2 {
+        font-size: 6.5rem;
+    }
+
+    .formacao .container .box2 h2,
+    .formacao .container .box2 h2 span {
+        font-size: 1.6rem;
+    }
+
+    .formacao .container .box2 p {
+        font-size: 1rem;
+        margin: 0 30px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .formacao .container .box2 .info,
+    .formacao .container .box2 .lang {
+        max-width: 500px;
+    }
+
+    .formacao .container .box1 img {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 610px) {
+    .formacao .container .box1 h2 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .formacao .container .box2 .info,
+    .formacao .container .box2 .lang {
+        max-width: 450px;
+    }
+
+    .formacao .container .box2 .info h3::before,
+    .formacao .container .box2 .lang h3::before {
+        position: initial;
+    }
+
+    .formacao .container .box2 h2 {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .formacao .container .box2 .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacao .container .box1 img {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .formacao .container .box1 h2 {
+        font-size: 5rem;
+    }
+
+    .formacao .container .box2 h2 {
+        margin-top: 20px;
+    }
+
+    .formacao .container .box2 h2,
+    .formacao .container .box2 h2 span {
+        font-size: 1.3rem;
+        width: 300px;
+    }
+
+    .formacao .container .box2 p {
+        font-size: 0.8rem;
+    }
+
+    .formacao .container .box2 .flex {
+        gap: 20px;
+    }
+
+    .formacao .container .box2 .flex .b0 {
+        padding: 0px;
+        padding-left: 20px;
+    }
+
+    .formacao .container .box2 .flex .b0 h4 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .formacao .container .box2 .flex .b0 h3 {
+        font-size: 17px;
+    }
+
+    .formacao .container .box2 .flex .b0 span {
+        font-size: 17px;
+    }
+
+    .formacao .container .box2 .flex .b0 h3::before {
+        top: -2px;
+    }
+
+    .formacao .container .box2 .info h3 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .formacao .container .box2 .lang h3 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .formacao .container .box2 .info,
+    .formacao .container .box2 .lang {
+        max-width: 350px;
+    }
+
+    .formacao .container .box2 .info ul li {
+        font-size: 16px;
+    }
+
+    .formacao .container .box2 .info ul li span {
+        font-size: 13px;
+    }
+
+    .formacao .container .box2 .info h3::before {
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .formacao .container .box2 .lang ul li {
+        font-size: 16px;
+    }
+
+    .formacao .container .box2 .lang ul li span {
+        font-size: 13px;
+    }
+
+    .formacao .container .box2 .lang h3::before {
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .formacao .container .box1 h2 {
+        font-size: 4rem;
+    }
+
+    .formacao .container .box2 h2,
+    .formacao .container .box2 h2 span {
+        font-size: 1.1rem;
+    }
+
+    .formacao .container .box2 .flex {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .formacao .container .box2 .info,
+    .formacao .container .box2 .lang {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .formacao .container .box2 .flex .b0 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .formacao .container .box1 h2 {
+        font-size: 3.5rem;
+    }
+
+    .formacao .container .box1 img {
+        width: 250px;
+    }
+
+    .formacao .container .box2 .flex {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .formacao .container .box2 .info,
+    .formacao .container .box2 .lang {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 300px) {
+    .formacao .container .box1 h2 {
+        font-size: 3.3rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .container h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #141414;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.footer .container .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer .container .grid .box-1 h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #808080;
+    position: relative;
+    display: inline;
+    max-width: 1100px;
+}
+
+.footer .container .grid .box-1 h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #0000cd;
+    width: 10px;
+    height: 29px;
+    top: 4;
+    left: -20;
+}
+
+.footer .container .grid .box-2 .nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 0;
+}
+
+.footer .container .grid .box-2 .nav li a img {
+    margin-top: 10px;
+    padding: 20px;
+    border-bottom: #000000 solid 3px;
+}
+
+.footer .container .grid .box-2 .nav li a img:hover {
+    border-bottom: #0000cd solid 3px;
+    background-color: #141414;
+    border-radius: 5px;
+}
+
+.footer .container img {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+@media (max-width: 1240px) {
+    .footer .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer .container .grid .box-1 h3 {
+        font-size: 1.7rem;
+    }
+
+    .footer .container .grid .box-1 h3::before {
+        top: -0;
+    }
+}
+
+@media (max-width: 660px) {
+    .footer .container .grid .box-2 .nav {
+        gap: 50px;
+    }
+
+    .footer .container .grid .box-2 .nav li a img {
+        width: 50px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer .container h2 {
+        font-size: 5rem;
+    }
+
+    .footer .container .grid .box-1 h3 {
+        font-size: 1rem;
+    }
+
+    .footer .container .grid .box-1 h3::before {
+        width: 5px;
+        height: 15px;
+        top: 1;
+        left: -14;
+    }
+
+    .footer .container .grid .box-2 .nav {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer .container h2 {
+        font-size: 4rem;
+    }
+
+    .footer .container .grid .box-1 h3 {
+        font-size: 0.937rem;
+    }
+    .footer .container .grid .box-2 .nav li a img {
+        width: 40px;
+    }
+
+    .footer .container img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 370px) {
+    .footer .container .grid .box-2 .nav {
+        gap: 15px;
+    }
+    .footer .container .grid .box-2 .nav li a img {
+        width: 35px;
+    }
+
+    .footer .container h2 {
+        font-size: 3.5rem;
+    }
+
+    .footer .container img {
+        width: 150px;
+    }
+}
