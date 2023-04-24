@@ -128,7 +128,7 @@ img {
     display: block;
     width: 100px;
     height: 100px;
-    background: url(../img/introducao/simbolo\ 1.svg) no-repeat center;
+    background: url(img/introducao/simbolo\ 1.svg) no-repeat center;
     background-size: 90px;
     position: absolute;
     left: -29px;
@@ -915,7 +915,7 @@ img {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../img/formacao/chrome_reader_mode_FILL0_wght600_GRAD0_opsz48\ 1.svg);
+    background-image: url(img/formacao/chrome_reader_mode_FILL0_wght600_GRAD0_opsz48\ 1.svg);
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -953,7 +953,7 @@ img {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../img/formacao/translate_FILL0_wght600_GRAD0_opsz48\ 1.svg);
+    background-image: url(img/formacao/translate_FILL0_wght600_GRAD0_opsz48\ 1.svg);
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
