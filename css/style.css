@@ -738,12 +738,13 @@ img {
     }
 
     .experiencia .container .box2 p {
-        font-size: 0.625rem;
+        font-size: 0.75rem;
         max-width: 50ch;
         margin: 0 auto;
         position: relative;
         color: #4f4f4f;
         margin-bottom: 20px;
+        padding: 0 7px;
     }
 
     .experiencia .container .box2 p::before {
@@ -753,7 +754,7 @@ img {
         width: 5px;
         height: 12px;
         background-color: #0000cd;
-        top: -1;
+        top: 0;
         left: 2;
     }
 
@@ -769,6 +770,13 @@ img {
         word-break: normal;
         margin-top: 0px;
         width: 100%;
+    }
+}
+
+@media (max-width: 318px) {
+    .experiencia .container .box2 p::before {
+        left: 25;
+        top: 0;
     }
 }
 
@@ -1028,6 +1036,7 @@ img {
 @media (max-width: 610px) {
     .formacao .container .box1 h2 {
         font-size: 6rem;
+        color: #333333;
     }
 }
 
@@ -1285,6 +1294,9 @@ img {
 }
 
 @media (max-width: 700px) {
+    .footer .container h2 {
+        color: #303030;
+    }
     .footer .container .grid .box-1 h3 {
         font-size: 1.7rem;
     }
