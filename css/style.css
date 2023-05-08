@@ -247,7 +247,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 270px;
+    width: 240px;
 }
 
 .skills .h2 {
@@ -288,6 +288,7 @@ img {
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 900px;
+    row-gap: 0px;
 }
 
 .skills .flex .box1 .b1 img {
@@ -324,6 +325,14 @@ img {
 /*******************
 ---responsividade---
 ********************/
+@media (max-width: 1000px) {
+
+    .skills .flex .box1 .b1,
+    .skills .flex .box2 .b2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 @media (max-width: 730px) {
     .skills .h2 {
