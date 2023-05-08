@@ -252,7 +252,7 @@ img {
     margin-top: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid #dcdcdc;
-    color: #d3d3d3;
+    color: #c0c0c0;
 }
 
 .skills .flex {
@@ -374,11 +374,12 @@ img {
     text-align: center;
     width: 330px;
     margin-top: 100px;
-    color: #d6d6d6;
+    color: #c0c0c0;
 }
 
 .experiencia .container .box1 img {
     width: 400px;
+    margin-top: 120px;
 }
 
 .experiencia .container .box2 .b2 {
@@ -489,6 +490,7 @@ img {
 @media (max-width: 1100px) {
     .experiencia .container .box2 .b2 .b3 .flex2 .box-img img {
         width: 80px;
+
     }
 
     .experiencia .container {
@@ -521,6 +523,7 @@ img {
     .experiencia .container .box1 img {
         width: 350px;
         margin: 0px auto;
+        border-right: 2px solid #d6d6d6;
     }
 }
 
@@ -531,7 +534,7 @@ img {
     }
 
     .experiencia .container .box1 img {
-        width: 300px;
+        width: 270px;
     }
 
     .experiencia .container .box1 h2 {
@@ -658,6 +661,10 @@ img {
         color: #b4b4b4;
     }
 
+    .experiencia .container .box1 img {
+        width: 200px;
+    }
+
     .experiencia .container .box2 p {
         font-size: 0.75rem;
         max-width: 50ch;
@@ -754,6 +761,14 @@ img {
 .formacao .container .box1 {
     display: flex;
     flex-direction: column;
+}
+
+.formacao .container .box1 img {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: jump 1.5s ease-in-out infinite;
 }
 
 .formacao .container .box1 h2 {
@@ -927,6 +942,21 @@ img {
     margin-bottom: 5px;
 }
 
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 @media (max-width: 1100px) {
     .formacao .container {
         grid-template-columns: 1fr;
@@ -942,8 +972,9 @@ img {
     }
 
     .formacao .container .box1 img {
-        width: 400px;
-        margin: 0 auto;
+        width: 200px;
+        padding-top: 30px;
+
     }
 
     .formacao .container .box2 {
@@ -976,7 +1007,7 @@ img {
     }
 
     .formacao .container .box1 img {
-        width: 350px;
+        width: 200px;
         margin: 0 auto;
     }
 }
@@ -1015,7 +1046,7 @@ img {
     }
 
     .formacao .container .box1 img {
-        width: 300px;
+        width: 180px;
         margin: 0 auto;
     }
 
@@ -1112,6 +1143,10 @@ img {
         font-size: 4rem;
     }
 
+    .formacao .container .box1 img {
+        width: 150px;
+    }
+
     .formacao .container .box2 h2,
     .formacao .container .box2 h2 span {
         font-size: 1.1rem;
@@ -1141,7 +1176,7 @@ img {
     }
 
     .formacao .container .box1 img {
-        width: 250px;
+        width: 150px;
     }
 
     .formacao .container .box2 .flex {
