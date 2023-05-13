@@ -166,7 +166,13 @@ img {
 
 @media (max-width: 800px) {
     .introducao {
+        grid-template-columns: 1fr;
         gap: 0px;
+    }
+
+    .introducao img {
+        width: 180px;
+        margin-bottom: 30px;
     }
 
     .introducao .box2 h1 {
